@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@keyframes fly-in {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes fly-out {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+body {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.block,
+.block-red,
+.block-orange,
+.block-yellow,
+.block-green,
+.block-blue,
+.block-indigo,
+.block-purple {
+    text-align: right;
+    width: 0;
+    font-family: Montserrat;
+    height: calc(99vh / 7);
+    color: white;
+    font-size: calc(80vh / 7);
+    animation: fly-in 1.5s ease-out forwards;
+}
+
+.block-red {
+    background-color: #FF5050;
+    animation-delay: 0s;
+}
+
+.block-orange {
+    background-color: #FF9933;
+    animation-delay: 0.5s;
+}
+
+.block-yellow {
+    background-color: #FFCC00;
+    animation-delay: 1s;
+}
+
+.block-green {
+    background-color: #33CC33;
+    animation-delay: 1.5s;
+}
+
+.block-blue {
+    background-color: #3399FF;
+    animation-delay: 2s;
+}
+
+.block-indigo {
+    background-color: #002966;
+    animation-delay: 2.5s;
+}
+
+.block-purple {
+    background-color: #5C3D99;
+    animation-delay: 3s;
+}
